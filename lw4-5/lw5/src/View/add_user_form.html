@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h3>Форма ввода данных</h3>
+        <form action="/add_user.php" method="POST" enctype="multipart/form-data">
+            <p>Имя: <input type="text" name="first_name" required /></p>
+            <p>Фамилия: <input type="text" name="last_name" required /></p>
+            <p>Отчество: <input type="text" name="middle_name" placeholder="Опционально" /></p>
+            <p>Пол: </p>
+            <input type="radio" name="gender" value="M" required />Мужской <br>
+            <input type="radio" name="gender" value="W" required />Женский <br>
+            <p>Дата рождения: <input type="date" name="birth_date" required /></p>
+            <p>Email: <input type="text" name="email" required /></p>
+            <p>Телефон: <input type="text" name="phone" placeholder="Опционально" /></p>
+            <p>Аватар: </p>
+            <p>Выберите файл: <input type="file" name="avatar_path" accept="image/png, image/jpeg, image/gif" /><br /><br /></p>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>
